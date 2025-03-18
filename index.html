@@ -6,35 +6,48 @@
     <title>Fresh First</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4; /* Adjust based on logo colors */
             text-align: center;
+            background: url('background.png') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
-        img {
+        .logo {
             max-width: 300px;
-            height: auto;
         }
-        a {
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cta-button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 18px;
             text-decoration: none;
             color: white;
-            background-color: #007bff; /* Adjust based on logo colors */
+            background-color: #007bff;
             border-radius: 5px;
+            transition: 0.3s;
         }
-        a:hover {
+        .cta-button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <img src="LOGO_FRESH_FIRST.png" alt="Fresh First Logo">
-    <a href="https://bols.co" target="_blank">Visit Bols.co</a>
+    <div class="content">
+        <img src="LOGO_FRESH_FIRST.png" alt="Fresh First Logo" class="logo">
+        <h1>Welcome to Fresh First</h1>
+        <p>We are committed to providing fresh, high-quality products.</p>
+        <a href="https://bols.co" target="_blank" class="cta-button">Visit Our Corporate Website</a>
+    </div>
 </body>
 </html>
